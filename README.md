@@ -14,12 +14,12 @@ This project was implemented through a series of logical phases to safely intera
    * **Minimal Block Locking:** Implemented a hashed lock pool mechanism ensuring that write operations take out `std::unique_lock` purely on the specific block or inode being modified, rather than halting the entire filesystem.
 
 ## Features Completed
-- [x] Read Core Structures (Superblock & Block Group Descriptors)
-- [x] Traverse Directories recursively
-- [x] Read File Contents (including handling indirect blocks)
-- [x] Update Existing Files (Append / Overwrite with dynamic block allocation)
-- [x] **[Bonus]** Lock-Free Concurrent Access for readers
-- [x] **[Bonus]** Minimal Block Locking Writes for writers
+-  Read Core Structures (Superblock & Block Group Descriptors)
+-  Traverse Directories recursively
+-  Read File Contents (including handling indirect blocks)
+-  Update Existing Files (Append / Overwrite with dynamic block allocation)
+-  Lock-Free Concurrent Access for readers
+-  Minimal Block Locking Writes for writers
 
 ## Disk File Outputs
 ### File: `disk-backpup.img`
